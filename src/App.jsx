@@ -1,4 +1,5 @@
 import { useState, useEffect, useRef, useCallback } from "react";
+import anjaneyaImage from "./assets/AnjaneyaStatue.jpeg";
 
 /* ─────────────────────────────────────────────────
    GLOBAL STYLES  (keyframes + custom utilities)
@@ -562,6 +563,13 @@ export default function AnjaneyyaRoofingFund() {
 
           <div className="relative z-10 text-center max-w-3xl mx-auto px-5 py-16 md:py-24 pb-24">
             {/* badge */}
+            <p className="font-telugu text-amber-200 text-sm mb-3">
+          ⚔️ ఛత్రపతి శివాజీ మహారాజ్ యువసేన ఆధ్వర్యంలో
+           </p>
+
+         <div className="reveal delay-1 inline-flex items-center gap-2 rounded-full px-4 py-1.5 mb-5
+         border backdrop-blur-sm"
+          style={{ background:"rgba(245,158,11,.1)", borderColor:"rgba(245,158,11,.28)" }}></div>
             <div className="reveal delay-1 inline-flex items-center gap-2 rounded-full px-4 py-1.5 mb-5
               border backdrop-blur-sm"
               style={{ background:"rgba(245,158,11,.1)", borderColor:"rgba(245,158,11,.28)" }}>
@@ -641,7 +649,7 @@ export default function AnjaneyyaRoofingFund() {
               <div className="img-conic-border float-anim relative inline-block">
                 <div className="rounded-[18px] overflow-hidden border-[3px] border-amber-500/60 shadow-2xl shadow-amber-700/25">
                   <img
-                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Hanuman_Murti_at_Jakhoo_Temple%2C_Shimla.jpg/800px-Hanuman_Murti_at_Jakhoo_Temple%2C_Shimla.jpg"
+                    src={anjaneyaImage}
                     alt="శ్రీ ఆంజనేయ స్వామి విగ్రహం"
                     className="w-full object-cover mx-auto"
                     style={{ maxWidth:300, maxHeight:390 }}
@@ -968,6 +976,9 @@ export default function AnjaneyyaRoofingFund() {
             <h3 className="font-cinzel-dec text-amber-500 font-bold mb-1" style={{ fontSize:"clamp(1rem,3.5vw,1.4rem)" }}>
               శ్రీ ఆంజనేయ స్వామి విగ్రహం
             </h3>
+
+            <p className="font-raleway text-amber-300 text-sm mt-1">
+            ఛత్రపతి శివాజీ మహారాజ్ యువసేన నిర్వహణలో            </p>
             <p className="font-telugu text-amber-400/50 text-[15px] mb-6">కప్పు నిర్మాణ నిధి — దైవాన్ని రక్షిద్దాం</p>
 
             <div className="flex items-center justify-center gap-3 mb-6 max-w-sm mx-auto">
