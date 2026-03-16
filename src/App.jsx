@@ -207,6 +207,7 @@ const GLOBAL_CSS = `
 ───────────────────────────────────────────────── */
 const DONATE_URL = "https://rzp.io/rzp/wPNnSwwe";
 const TARGET     = 60000;
+const INITIAL_COLLECTED = 2617;
 const CIRCUMFERENCE = 2 * Math.PI * 86; // ≈ 540
 
 /* ─────────────────────────────────────────────────
@@ -455,7 +456,7 @@ export default function AnjaneyyaRoofingFund() {
   useEffect(() => {
     const saved     = localStorage.getItem("anjaneya_collected");
     const savedDate = localStorage.getItem("anjaneya_updated");
-    const amount    = saved ? parseInt(saved) : 0;
+    const amount = saved ? parseInt(saved) : INITIAL_COLLECTED;
     setTimeout(() => {
       renderAmount(amount, false);
       if (amount > 0) animateCount(setDisplayAmt, 0, amount);
@@ -516,7 +517,7 @@ export default function AnjaneyyaRoofingFund() {
 
   /* ── derived tracker values ── */
   const pct        = Math.min(collected / TARGET * 100, 100);
-  const remaining  = Math.max(TARGET - collected, 2617);
+  const remaining  = Math.max(TARGET - collected, 0);
   const milestones = [
     { id:"m1", icon:"🌱", label:"₹10,000 — ప్రారంభం",         sub:"పునాది మొదటి అడుగు",         target:10000 },
     { id:"m2", icon:"🔥", label:"₹25,000 — సగం లక్ష్యం",     sub:"మొత్తంలో 42% సేకరించాము",   target:25000 },
