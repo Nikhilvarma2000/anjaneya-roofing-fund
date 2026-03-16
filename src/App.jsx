@@ -992,6 +992,15 @@ export default function AnjaneyyaRoofingFund() {
                 <span key={i} className="font-telugu text-yellow-300 font-bold text-base">{s}</span>
               ))}
             </div>
+            <div className="mb-6">
+           <p className="font-telugu text-amber-300 text-sm">
+            సంప్రదించండి
+             </p>
+
+           <p className="font-raleway text-yellow-300 text-sm mt-1">
+            📞 9150299458 &nbsp; | &nbsp; 📞 9133489472
+           </p>
+            </div>
 
             <div className="border-t border-white/6 pt-5">
               <p className="font-telugu text-stone-500 text-[13px]">
