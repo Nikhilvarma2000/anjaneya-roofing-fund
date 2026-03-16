@@ -516,7 +516,7 @@ export default function AnjaneyyaRoofingFund() {
 
   /* ── derived tracker values ── */
   const pct        = Math.min(collected / TARGET * 100, 100);
-  const remaining  = Math.max(TARGET - collected, 0);
+  const remaining  = Math.max(TARGET - collected, 2617);
   const milestones = [
     { id:"m1", icon:"🌱", label:"₹10,000 — ప్రారంభం",         sub:"పునాది మొదటి అడుగు",         target:10000 },
     { id:"m2", icon:"🔥", label:"₹25,000 — సగం లక్ష్యం",     sub:"మొత్తంలో 42% సేకరించాము",   target:25000 },
