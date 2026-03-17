@@ -207,7 +207,7 @@ const GLOBAL_CSS = `
 ───────────────────────────────────────────────── */
 const DONATE_URL = "https://rzp.io/rzp/wPNnSwwe";
 const TARGET     = 60000;
-const INITIAL_COLLECTED = 9145;
+const INITIAL_COLLECTED = "9145";
 const CIRCUMFERENCE = 2 * Math.PI * 86; // ≈ 540
 
 /* ─────────────────────────────────────────────────
